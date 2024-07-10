@@ -7,7 +7,7 @@ export default function FeedbackCart({
   studentPicture,
 }) {
   return (
-    <div className="w-[648px] relative h-[310px]">
+    <div className="w-[648px] relative h-[410px]">
       <div className="relative w-[648px] h-[310px] rounded-[30px]">
         <div className="absolute w-[592px] h-[238px] top-7 left-7 blur-[100px] opacity-[0.24]" />
         <div className="absolute w-[648px] h-[294px] top-0 left-0 bg-[#eef1f2] rounded-[30px]">
