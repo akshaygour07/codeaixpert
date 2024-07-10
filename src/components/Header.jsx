@@ -1,5 +1,6 @@
 import React from "react";
 import logo from "../assets/images/header-logo.png";
+import { Link } from "react-scroll";
 
 export default function Header() {
   const tabBoxClass =
@@ -16,19 +17,55 @@ export default function Header() {
       <div className="inline-flex items-center gap-[102px] relative flex-[0_0_auto]">
         <div className="inline-flex items-center justify-center gap-[72px] relative flex-[0_0_auto]">
           <div className={tabBoxClass}>
-            <button className={tabTextClass}>Home</button>
+            <Link
+              to="home"
+              spy={true}
+              smooth={true}
+              offset={10}
+              duration={500}
+              className={tabTextClass}
+            >
+              Home
+            </Link>
           </div>
 
           <div className={tabBoxClass}>
-            <button className={tabTextClass}>Courses</button>
+            <Link
+              to="courses"
+              spy={true}
+              smooth={true}
+              offset={10}
+              duration={500}
+              className={tabTextClass}
+            >
+              Courses
+            </Link>
           </div>
 
           <div className={tabBoxClass}>
-            <button className={tabTextClass}>Success</button>
+            <Link
+              to="success"
+              spy={true}
+              smooth={true}
+              offset={10}
+              duration={500}
+              className={tabTextClass}
+            >
+              Success
+            </Link>
           </div>
 
           <div className={tabBoxClass}>
-            <button className={tabTextClass}>FAQ</button>
+            <Link
+              to="faq"
+              spy={true}
+              smooth={true}
+              offset={10}
+              duration={500}
+              className={tabTextClass}
+            >
+              FAQ
+            </Link>
           </div>
         </div>
 

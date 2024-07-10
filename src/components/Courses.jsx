@@ -3,7 +3,7 @@ import Cart from "./Cart";
 
 export default function MostPopularCourse() {
   return (
-    <div className="relative w-[2280px] h-[1950px] bg-white">
+    <div className="courses relative w-[2280px] h-[1950px] bg-white">
       <div className="flex flex-col w-[1017px] items-center gap-10 absolute top-[149px] left-[175px]">
         <div className="inline-flex h-[94px] items-center justify-center gap-2.5 relative">
           <p className="relative w-fit [font-family:'Montserrat-SemiBold',Helvetica] font-semibold text-transparent text-[74px] tracking-[-1.48px] leading-[48px] whitespace-nowrap">

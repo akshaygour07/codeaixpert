@@ -20,7 +20,7 @@ export default function Student() {
     cssEase: "linear",
   };
   return (
-    <div className="flex flex-col w-[2280px] h-[947px] items-center gap-[100px] px-[108px] py-[102px] relative bg-[#eef1f2]">
+    <div className="success flex flex-col w-[2280px] h-[947px] items-center gap-[100px] px-[108px] py-[102px] relative bg-[#eef1f2]">
       <div className="flex flex-col w-[1408px] items-start gap-[100px] mb-[-42.00px] relative flex-[0_0_auto]">
         <div className="inline-flex flex-col items-start gap-10 relative flex-[0_0_auto]">
           <div className="inline-flex items-center justify-center gap-2.5 relative flex-[0_0_auto]">

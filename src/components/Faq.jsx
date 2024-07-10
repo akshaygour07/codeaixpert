@@ -4,7 +4,7 @@ import downArrow from "../assets/icons/downarrow.svg";
 
 export default function Faq() {
   return (
-    <div className="flex flex-col w-[2280px] h-[1117px] items-center justify-center gap-2.5 p-[375px] relative bg-[url(/faq.png)] bg-cover bg-[50%_50%]">
+    <div className="faq flex flex-col w-[2280px] h-[1117px] items-center justify-center gap-2.5 p-[375px] relative bg-[url(/faq.png)] bg-cover bg-[50%_50%]">
       <div className="inline-flex flex-col justify-center gap-2.5 p-[100px] bg-[#0166fe] rounded-3xl overflow-hidden backdrop-blur-xl backdrop-brightness-[100%] [-webkit-backdrop-filter:blur(24px)_brightness(100%)] items-center relative flex-[0_0_auto]">
         <div className="inline-flex flex-col gap-[50px] items-center relative flex-[0_0_auto]">
           <div className="gap-4 flex-[0_0_auto] flex flex-col items-start px-0 py-4 relative self-stretch w-full border-b-[1.5px] [border-bottom-style:solid] border-[#ebebeb]">
