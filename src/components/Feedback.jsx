@@ -12,27 +12,25 @@ import "slick-carousel/slick/slick-theme.css";
 export default function Feedback() {
   let settings = {
     dots: true,
-    infinite: true,
+    infinite: false,
     speed: 500,
     slidesToShow: 2,
     slidesToScroll: 1,
   };
   return (
-    <div className="flex flex-col w-[2280px] items-center justify-center gap-2.5 px-[108px] py-[102px] relative bg-white">
-      <div className="inline-flex flex-col items-start gap-[61px] relative flex-[0_0_auto]">
-        <div className="inline-flex flex-col items-start gap-10 relative flex-[0_0_auto]">
-          <p className="relative self-stretch mt-[-1.00px] [font-family:'Montserrat-SemiBold',Helvetica] font-semibold text-transparent text-[74px] tracking-[0] leading-[48px]">
-            <span className="text-[#06241b]">Student </span>
-            <span className="text-[#0166fe]">Feedback</span>
-          </p>
-          <p className="relative self-stretch [font-family:'Montserrat-Regular',Helvetica] font-normal text-[#333333] text-xl tracking-[0] leading-7">
-            Below you&#39;ll get some fantastic reviews from our students. They
-            also told about our future planning.
-          </p>
-        </div>
-        <div className="inline-flex flex-col items-end justify-end gap-[60px] relative flex-[0_0_auto]">
+    <div className="w-[1519px] px-[158px] pb-[102px]">
+      <div className="flex flex-col justify-start items-start gap-6">
+        <p className="relative [font-family:'Montserrat-SemiBold',Helvetica] font-semibold text-transparent text-[54px]">
+          <span className="text-[#06241b]">Student </span>
+          <span className="text-[#0166fe]">Feedback</span>
+        </p>
+        <p className="relative [font-family:'Montserrat-Regular',Helvetica] font-normal text-[#333333] text-xl">
+          Below you'll get some fantastic reviews from our students. They also
+          told about our future planning.
+        </p>
+        <div className="inline-flex flex-col items-end justify-end top-10 gap-[30px] relative">
           <div className="inline-flex flex-col items-start gap-2.5 relative flex-[0_0_auto]">
-            <div className="w-[1352px] items-center gap-10 relative">
+            <div className="w-[1252px] items-center gap-5 relative">
               <Slider {...settings}>
                 {dataFeedback.map((feedback) => {
                   return (

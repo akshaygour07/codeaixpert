@@ -9,8 +9,8 @@ export default function Header() {
     "relative w-fit [font-family:'Montserrat-Medium',Helvetica] font-medium text-[#010100] text-xl whitespace-nowrap";
 
   return (
-    <div className="flex w-[2200px] items-center justify-evenly gap-20 relative">
-      <div className="inline-flex items-center gap-2.5 py-20 relative flex-[0_0_auto]">
+    <div className="flex w-[1519px] items-center justify-between px-20 relative">
+      <div className="inline-flex items-center gap-2.5 py-10 relative flex-[0_0_auto]">
         <img className="relative h-[80px]" src={logo} />
       </div>
 
@@ -21,7 +21,7 @@ export default function Header() {
               to="home"
               spy={true}
               smooth={true}
-              offset={10}
+              offset={40}
               duration={500}
               className={tabTextClass}
             >
@@ -34,7 +34,7 @@ export default function Header() {
               to="courses"
               spy={true}
               smooth={true}
-              offset={10}
+              offset={80}
               duration={500}
               className={tabTextClass}
             >
@@ -47,7 +47,7 @@ export default function Header() {
               to="success"
               spy={true}
               smooth={true}
-              offset={10}
+              offset={50}
               duration={500}
               className={tabTextClass}
             >
@@ -60,7 +60,7 @@ export default function Header() {
               to="faq"
               spy={true}
               smooth={true}
-              offset={10}
+              offset={50}
               duration={500}
               className={tabTextClass}
             >
@@ -70,12 +70,12 @@ export default function Header() {
         </div>
 
         <div className="inline-flex items-start gap-8 relative flex-[0_0_auto]">
-          <div className="flex w-[142px] items-center justify-center gap-2.5 px-6 py-4 relative bg-white border-2 border-solid border-[#0166fe]">
+          <div className="flex w-[132px] items-center justify-center gap-2.5 px-5 py-3 relative bg-white border-2 border-solid border-[#0166fe]">
             <div className="relative w-fit mt-[-2.00px] [font-family:'Montserrat-SemiBold',Helvetica] font-semibold text-[#010100] text-xl tracking-[0.40px] leading-[normal] whitespace-nowrap">
               Login
             </div>
           </div>
-          <div className="flex w-[142px] items-center justify-center gap-2.5 px-6 py-4 relative bg-[#0166fe]">
+          <div className="flex w-[132px] items-center justify-center gap-2.5 px-5 py-3 relative bg-[#0166fe]">
             <div className="relative w-fit mt-[-1.00px] [font-family:'Montserrat-SemiBold',Helvetica] font-semibold text-white text-xl tracking-[0.40px] leading-[normal] whitespace-nowrap">
               Signup
             </div>

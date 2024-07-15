@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-.slick-arrow:before {
+/* .slick-arrow:before {
   color: #0166fe;
   font-size: 60px;
   border-radius: none;
@@ -15,4 +15,4 @@
 .slick-next {
   top: 450px;
   right: 40px;
-}
+} */
