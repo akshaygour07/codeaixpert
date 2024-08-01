@@ -1,6 +1,5 @@
 import React from "react";
 import Slider from "react-slick";
-import StudentCart from "./StudentCart.jsx";
 import Student1 from "../assets/images/student1.png";
 import Student2 from "../assets/images/student2.png";
 import Student3 from "../assets/images/student3.png";
@@ -12,48 +11,65 @@ export default function Student() {
   let settings = {
     dots: true,
     infinite: true,
-    speed: 3000,
+    lazyLoad: true,
+    speed: 2000,
     slidesToShow: 4,
     slidesToScroll: 2,
-    autoplay: true,
-    autoplaySpeed: 500,
+    autoplay: false,
+    autoplaySpeed: 3000,
     cssEase: "linear",
+    pauseOnHover: true,
+    responsive: [
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: true,
+          autoplay: false,
+          cssEase: "linear",
+        },
+      },
+    ],
   };
   return (
-    <div className="success flex flex-col w-[1519px] py-[100px] justify-center items-center gap-[100px] relative ">
-      <div className="flex flex-col w-[1408px] px-[108px] py-[58px] items-start relative flex-[0_0_auto] bg-[#eef1f2]">
-        <div className="inline-flex flex-col items-start  gap-5 relative flex-[0_0_auto]">
-          <div className="inline-flex items-center justify-center gap-2.5 relative flex-[0_0_auto]">
-            <p className="relative w-fit [font-family:'Montserrat-SemiBold',Helvetica] font-semibold text-transparent text-[54px]">
-              <span className="text-[#06241b] tracking-[-1.10px]">
-                Meet Our{" "}
-              </span>
-              <span className="text-[#0166fe] tracking-[-1.10px]">
-                Successful
-              </span>
-              <span className="text-[#06241b] tracking-[-1.10px]">
-                {" "}
-                Students
-              </span>
+    <div className="p-10 w-full">
+      <div className="flex flex-col gap-2 md:px-10 p-5 bg-gray-200">
+        <div className="flex flex-col md:text-start text-center md:px-10 py-2">
+          <div className="p-2 md:text-5xl text-3xl font-semibold">
+            <p className="text-black">
+              Meet Our<span className="text-blue-700"> Successful </span>
+              Students
             </p>
           </div>
-          <div className="inline-flex items-center justify-center gap-2.5 relative flex-[0_0_auto]">
-            <p className="relative w-fit [font-family:'Montserrat-Regular',Helvetica] font-normal text-[#333333] text-xl whitespace-nowrap">
-              Below you&#39;ll find our students who are working on the lead
-              tech companies
-            </p>
+          <div className="p-2 md:text-2xl text-lg text-gray-700">
+            Below you&#39;ll find our students who are working on the lead tech
+            companies
           </div>
         </div>
-        <div className="flex flex-col items-center gap-[70px] w-full relative py-14">
-          <div className="slider-container items-center gap-[30px] relative self-stretch w-full whitespace-nowrap">
+        <div className="flex items-center gap-10 py-10 md:px-20">
+          <div className="w-full items-center">
             <Slider {...settings}>
               {dataStudent.map((student) => {
                 return (
-                  <StudentCart
-                    studentName={student.name}
-                    jobDescription={student.job}
-                    studentImage={student.image}
-                  />
+                  <div key={student.id} className="pb-[50px]">
+                    <div className="inline-flex items-start p-4 bg-white rounded-[20px]">
+                      <div className="flex flex-col items-start gap-3">
+                        <img
+                          className="w-[234px] h-[234px] rounded-lg"
+                          src={student.image}
+                        />
+                        <div className="[font-family:'Public_Sans-Medium',Helvetica] font-medium text-[#1b1d1f] text-[22px]">
+                          {student.name}
+                        </div>
+
+                        <div className="[font-family:'Public_Sans-Regular',Helvetica] font-normal text-[#363a3d] text-[15px]">
+                          {student.job}
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 );
               })}
             </Slider>

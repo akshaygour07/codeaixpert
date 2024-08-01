@@ -4,46 +4,33 @@ import arrowUpRight from "../assets/images/arrow.png";
 
 export default function Cart({ title, description, amount }) {
   return (
-    <div className="p-5 relative w-[402px] rounded-2xl bg-white rounded-[20px} ">
-      <article className="flex flex-col items-start gap-[20px] relative">
-        <div className="inline-flex flex-col items-end justify-end gap-6 relative">
-          <img
-            className="relative w-[362px] h-[240px] rounded-lg overflow-hidden bg-cover bg-[50%_50%]"
-            src={cartImage}
-            alt="Image of courses"
-          />
+    <div className="p-2 flex flex-col rounded-2xl bg-white shadow-2xl focus:shadow-outline">
+      <img
+        className="w-[370px] h-[250px] rounded-lg"
+        src={cartImage}
+        alt="Image of courses"
+      />
+      <div className="flex flex-col w-[368px] gap-2 p-2 relative">
+        <p className="font-medium text-gray-800 text-xl [font-family:'Public_Sans-Medium',Helvetica]">
+          {title}
+        </p>
+        <p className="font-normal text-[#363a3d] text-md [font-family:'Public_Sans-Regular',Helvetica]">
+          {description}
+        </p>
+      </div>
+      <div className="flex gap-3 px-1 relative">
+        <img
+          className="w-[140px] h-[30px]"
+          src={starImage}
+          alt="Five start image"
+        />
+        <div className="font-semibold mt-[4px] text-[#52565c] [font-family:'Public_Sans-SemiBold',Helvetica] ">
+          (102)
         </div>
-
-        <div className="flex flex-col items-start gap-2.5 relative">
-          <div className="flex items-start justify-center gap-2.5 relative">
-            <p className="relative w-[362px] [font-family:'Public_Sans-Medium',Helvetica] font-medium text-[#1b1d1f] text-2xl">
-              {title}
-            </p>
-          </div>
-          <div className="flex items-center justify-center gap-2.5 relative self-stretch w-full flex-[0_0_auto]">
-            <p className="relative w-[362px]  [font-family:'Public_Sans-Regular',Helvetica] font-normal text-[#363a3d] text-lg">
-              {description}
-            </p>
-          </div>
-        </div>
-
-        <div className="inline-flex items-center justify-center bottom-3 gap-[5px] relative">
-          <img
-            className="relative w-[140px] h-[35px] flex-[0_0_auto]"
-            src={starImage}
-            alt="Five start image"
-          />
-          <div className="inline-flex items-center justify-center gap-2.5 relative flex-[0_0_auto]">
-            <div className="relative w-fit [font-family:'Public_Sans-SemiBold',Helvetica] font-semibold text-[#52565c] text-base ">
-              (102)
-            </div>
-          </div>
-        </div>
-      </article>
-      <div className="flex items-center justify-between m-2 relative">
-        <div className="relative w-fit [font-family:'Public_Sans-SemiBold',Helvetica] font-semibold text-[#1b1d1f] text-[32px] whitespace-nowrap">
-          {amount}
-        </div>
+      </div>
+      <div className="mx-2 my-2 border border-gray-400"></div>
+      <div className="flex items-center justify-between p-2">
+        <div className="font-bold text-[#1b1d1f] text-[32px]">{amount}</div>
         <button className="!relative !flex-[0_0_auto]">
           <img
             className="relative w-12 h-12"

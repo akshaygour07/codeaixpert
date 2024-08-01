@@ -3,8 +3,8 @@ import footerBar from "../assets/images/footer-bar.png";
 export default function Footer() {
   return (
     <div className="w-[1519px] h-[700px] flex flex-col justify-start items-center">
-      <img className="relative w-[100px] h-[100px]" src={logo} />
-      <div className="relative w-fit [font-family:'Iceland-Regular',Helvetica] font-normal text-[#010100] text-[42px] whitespace-nowrap">
+      <img className="relative w-[100px] h-[100px] object-contain" src={logo} />
+      <div className="relative w-fit font-title font-normal text-[#010100] text-[42px] whitespace-nowrap">
         CodeaiXpert
       </div>
       <p className="relative w-[672px] pt-[52px] [font-family:'Montserrat-Medium',Helvetica] font-medium text-black text-xl text-center leading-[25px]">
